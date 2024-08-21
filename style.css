@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se movam em várias linhas */
+}
+
+header .logo img {
+    width: 80px; /* Tamanho do logotipo */
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Estilizando a banner */
+.banner {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner .cta-button:hover {
+    background-color: #e05549;
+}
+
+/* Estilizando os cards de lojas */
+.lojas-card {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.lojas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilizando os cards de lojas */
+.lojas-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px; /* Reduzido para diminuir o tamanho do card */
+    margin: 15px; /* Reduzido para aumentar o espaçamento entre os cards */
+    width: 30%; /* Ajustado para uma largura menor */
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Sombra ajustada */
+}
+.Container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .lojas-card {
+        width: 45%; /* Ajustado para telas médias */
+        padding: 15px; /* Padding reduzido para telas médias */
+        margin: 10px; /* Margem ajustada para telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .lojas-card {
+        width: 100%; /* Largura completa em dispositivos pequenos */
+        padding: 10px; /* Padding reduzido para telas pequenas */
+        margin: 5px; /* Margem ajustada para telas pequenas */
+    }
+}
+
+.lojas-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.lojas-card p {
+    font-size: 16px;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .lojas-card {
+        width: 45%; /* Ajusta a largura dos cards para dispositivos médios */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .lojas-card {
+        width: 100%; /* Largura completa em dispositivos pequenos */
+    }
+}
